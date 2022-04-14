@@ -1,0 +1,73 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="Gestion_De_StockModelStoreContainer" CdmEntityContainer="dbStockContext">
+    <EntitySetMapping Name="Categories">
+      <EntityTypeMapping TypeName="Gestion_De_StockModel.Categorie">
+        <MappingFragment StoreEntitySet="Categorie">
+          <ScalarProperty Name="Nom_Categorie" ColumnName="Nom_Categorie" />
+          <ScalarProperty Name="ID_CATEGORIE" ColumnName="ID_CATEGORIE" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Clients">
+      <EntityTypeMapping TypeName="Gestion_De_StockModel.Client">
+        <MappingFragment StoreEntitySet="Client">
+          <ScalarProperty Name="Email_Client" ColumnName="Email_Client" />
+          <ScalarProperty Name="Ville_Client" ColumnName="Ville_Client" />
+          <ScalarProperty Name="Pays_Client" ColumnName="Pays_Client" />
+          <ScalarProperty Name="telephone_Client" ColumnName="telephone_Client" />
+          <ScalarProperty Name="Adresse_Client" ColumnName="Adresse_Client" />
+          <ScalarProperty Name="Prenom_Client" ColumnName="Prenom_Client" />
+          <ScalarProperty Name="Nom_Client" ColumnName="Nom_Client" />
+          <ScalarProperty Name="ID_Client" ColumnName="ID_Client" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Commandes">
+      <EntityTypeMapping TypeName="Gestion_De_StockModel.Commande">
+        <MappingFragment StoreEntitySet="Commande">
+          <ScalarProperty Name="ToTaL_TTC" ColumnName="ToTaL_TTC" />
+          <ScalarProperty Name="TVA" ColumnName="TVA" />
+          <ScalarProperty Name="ToTaL_HT" ColumnName="ToTaL_HT" />
+          <ScalarProperty Name="ID_Client" ColumnName="ID_Client" />
+          <ScalarProperty Name="Date_Commande" ColumnName="Date_Commande" />
+          <ScalarProperty Name="ID_Commande" ColumnName="ID_Commande" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Details_Commande">
+      <EntityTypeMapping TypeName="Gestion_De_StockModel.Details_Commande">
+        <MappingFragment StoreEntitySet="Details_Commande">
+          <ScalarProperty Name="ToTal" ColumnName="ToTal" />
+          <ScalarProperty Name="Remise" ColumnName="Remise" />
+          <ScalarProperty Name="Prix" ColumnName="Prix" />
+          <ScalarProperty Name="Quantite" ColumnName="Quantite" />
+          <ScalarProperty Name="Nom_Produit" ColumnName="Nom_Produit" />
+          <ScalarProperty Name="ID_Produit" ColumnName="ID_Produit" />
+          <ScalarProperty Name="ID_Commande" ColumnName="ID_Commande" />
+          <ScalarProperty Name="iddetail" ColumnName="iddetail" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Produits">
+      <EntityTypeMapping TypeName="Gestion_De_StockModel.Produit">
+        <MappingFragment StoreEntitySet="Produit">
+          <ScalarProperty Name="ID_CATEGORIE" ColumnName="ID_CATEGORIE" />
+          <ScalarProperty Name="Image_Produit" ColumnName="Image_Produit" />
+          <ScalarProperty Name="Prix_Produit" ColumnName="Prix_Produit" />
+          <ScalarProperty Name="Quantite_Produit" ColumnName="Quantite_Produit" />
+          <ScalarProperty Name="Nom_Produit" ColumnName="Nom_Produit" />
+          <ScalarProperty Name="ID_Produit" ColumnName="ID_Produit" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Utilisateurs">
+      <EntityTypeMapping TypeName="Gestion_De_StockModel.Utilisateur">
+        <MappingFragment StoreEntitySet="Utilisateur">
+          <ScalarProperty Name="Mot_De_Passe" ColumnName="Mot_De_Passe" />
+          <ScalarProperty Name="NomUtilisateur" ColumnName="NomUtilisateur" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>
